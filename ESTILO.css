@@ -1,0 +1,42 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    background-color: beige;
+}
+.menu{
+    width: 100%;
+    font-family: "impact";
+    font-size: 16px;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+.menu ul li{
+    background-color: blue;
+    padding: 20px;
+    flex-grow: 1;
+    border: solid 1px #fff;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: orange;
+}
+.menu ul li:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+.menu ul li ul{
+    display: none;
+}
+.menu ul li:hover>ul{
+    display: block;
+}
+@media (max-whidth: 520px){
+    .menu ul{
+        display: block;
+    }
+}
